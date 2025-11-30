@@ -1,0 +1,35 @@
+# --- ビルド出力ディレクトリ (コンパイルごとのゴミや生成物) ---
+Debug/
+Release/
+ipch/
+*.obj
+*.o
+*.elf
+*.map
+*.lss
+*.eep
+*.srec
+*.users
+*.tmp
+
+# --- Visual Studio / Microchip Studio のユーザー固有設定 (絶対にコミットしない) ---
+# ウィンドウの配置やデバッガの設定など、個人ごとの環境設定ファイルです
+*.suo
+*.user
+*.vsp
+*.psess
+*.vspx
+
+# --- 一時ファイルやバックアップ ---
+*.bak
+*.log
+_UpgradeReport_Files/
+UpgradeLog*
+
+# --- (任意) Hexファイル ---
+# ソースがあれば再生成できるため基本は除外しますが、
+# すぐ書き込みたいバイナリを残したい場合は # を外してください
+# *.hex
+
+# --- Visual Studio の隠しフォルダ ---
+.vs/
