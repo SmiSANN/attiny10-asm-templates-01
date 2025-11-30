@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Atmel Studio Solution File, Format Version 11.00
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{18226A42-8477-4023-8AD2-40C49DA407C9}") = "attiny10-asm-templates-01", "attiny10-asm-templates-01\attiny10-asm-templates-01.asmproj", "{59B1D629-9DCC-43ED-A0FD-8AB0E4D622AB}"
+Project("{18226A42-8477-4023-8AD2-40C49DA407C9}") = "led-pwmblink", "attiny10-asm-templates-01\led-pwmblink.asmproj", "{59B1D629-9DCC-43ED-A0FD-8AB0E4D622AB}"
+EndProject
+Project("{18226A42-8477-4023-8AD2-40C49DA407C9}") = "led-blink", "led-blink\led-blink.asmproj", "{DD92A95C-3259-46C7-B760-40A70A63CC3F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{59B1D629-9DCC-43ED-A0FD-8AB0E4D622AB}.Debug|AVR.Build.0 = Debug|AVR
 		{59B1D629-9DCC-43ED-A0FD-8AB0E4D622AB}.Release|AVR.ActiveCfg = Release|AVR
 		{59B1D629-9DCC-43ED-A0FD-8AB0E4D622AB}.Release|AVR.Build.0 = Release|AVR
+		{DD92A95C-3259-46C7-B760-40A70A63CC3F}.Debug|AVR.ActiveCfg = Debug|AVR
+		{DD92A95C-3259-46C7-B760-40A70A63CC3F}.Debug|AVR.Build.0 = Debug|AVR
+		{DD92A95C-3259-46C7-B760-40A70A63CC3F}.Release|AVR.ActiveCfg = Release|AVR
+		{DD92A95C-3259-46C7-B760-40A70A63CC3F}.Release|AVR.Build.0 = Release|AVR
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
