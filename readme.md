@@ -12,7 +12,6 @@ Microchip Studio (旧 Atmel Studio) での利用を想定しています。
 
 * **IDE:** Microchip Studio for AVR and SAM Devices 7.0
 * **Target Device:** ATtiny10
-* **Programmer:** Atmel-ICE, PICkit 4, SNAP 等 
 
 ## 使い方 (Usage)
 
