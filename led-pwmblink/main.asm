@@ -53,6 +53,17 @@ loop:
     OUT     OCR0AL, r16     ; PB0
     OUT     OCR0BL, r17     ; PB1
 
+    ; --- ディレイ処理 (明滅を視認可能にする) ---
+    ; 8MHz動作時、約6ms程度のディレイ
+    LDI     r19, 64         ; 外側ループカウンタ
+delay_outer:
+    LDI     r20, 255        ; 内側ループカウンタ
+delay_inner:
+    DEC     r20
+    BRNE    delay_inner     ; r20 != 0 ならループ
+    DEC     r19
+    BRNE    delay_outer     ; r19 != 0 ならループ
+
     ; ポインタ補正 (256バイトループ)
     ; X+, Y+で下位バイトがオーバーフロー(FF->00)すると上位バイト(XH/YH)が
     ; インクリメント(41->42)されてしまうため、強制的に0x41に戻す
